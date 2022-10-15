@@ -45,3 +45,5 @@ function integers_from(n) {
 const integers = integers_from(1);
 
 eval_stream(stream_filter(x => x%8 === 0, integers), 11);
+
+accumulate((x, y) => x + y, 0, eval_stream(stream_filter(x => x%8 === 0, integers), 11));

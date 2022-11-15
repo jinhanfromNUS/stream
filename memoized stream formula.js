@@ -1,4 +1,4 @@
-//memorizad streams formula
+//memorized streams formula
 function memo_fun(fun) {
     let already_run = false;
     let result = undefined;
